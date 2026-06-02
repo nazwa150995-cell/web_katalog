@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Produk Keren</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8f9fa; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        
+        h1 { 
+            text-align: center; 
+            color: #111; 
+            font-weight: 700;
+            margin-top: 40px;
+            letter-spacing: -0.03em;
+        }
+
+        .welcome-container {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .welcome-message {
+            font-size: 20px;
+            font-weight: 400; 
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .katalog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .produk-card {
+            background: #ffffff;
+            border-radius: 16px; 
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.04); 
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        
+        .produk-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 38px rgba(0, 0, 0, 0.13), 0 7px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .produk-card img {
+            max-width: 85%;       
+            max-height: 180px;     
+            width: auto;           
+            height: auto;          
+            object-fit: contain;   
+            display: block;        
+            margin: 25px auto 10px;   
+            transition: transform 0.4s ease;
+        }
+
+        
+        .produk-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .produk-info h3 { 
+            font-size: 1.2rem; 
+            font-weight: 600;
+            margin: 15px 0 8px; 
+            color: #111; 
+            text-transform: capitalize; 
+        }
+        
+        .harga { 
+            color: #d35400; 
+            font-weight: 700; 
+            font-size: 1.1rem; 
+            margin: 0 0 20px 0; 
+        }
+
+        
+        .btn-beli {
+            display: inline-block;
+            padding: 11px 32px;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 0 5px 15px rgba(39, 174, 96, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .btn-beli:hover { 
+            background: linear-gradient(135deg, #219150, #27ae60);
+            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.4);
+            transform: translateY(-1px);
+        }
+        
+        footer { 
+            margin-top: 80px; 
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-top: 1px solid #eee;
+            text-align: center; 
+            color: #555;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        
+        footer h2 {
+            color: #111;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .info-toko p {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phone Gallery</h1>
+
+    <div class="welcome-container">
+        <div class="welcome-message">Selamat datang di Phone Gallery!</div>
+        <div class="welcome-messade">Temukan kemewahan dan performa terbaik dalam genggaman Anda melalui koleksi iPhone terbaru kami.</div>
+    </div>
+   
+    <div class="katalog-container">
+       
+        <div class="produk-card">
+            <img src="ip14..jpg" alt="iPhone 14">
+            <div class="produk-info">
+                <h3>iphone 14</h3>
+                <p class="harga">Rp 8.749.000</p>
+                <a href="detail.ip14.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+        
+        <div class="produk-card">
+            <img src="ip15..webp" alt="iPhone 15">
+            <div class="produk-info">
+                <h3>iphone 15</h3>
+                <p class="harga">Rp 12.999.000</p>
+                <a href="detail.ip15.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+       
+        <div class="produk-card">
+            <img src="ip16..webp" alt="iPhone 16">
+            <div class="produk-info">
+                <h3>iphone 16</h3>
+                <p class="harga">Rp 16.999.000</p>
+                <a href="detail.ip16.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+        
+        <div class="produk-card">
+            <img src="ip16pm.jpg" alt="iPhone 16 Pro Max">
+            <div class="produk-info">
+                <h3>iphone 16 pro max</h3>
+                <p class="harga">Rp 21.949.000</p>
+                <a href="detail.ip16pm.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+       
+        <div class="produk-card">
+            <img src="ip16e.jpg" alt="iPhone 16e">
+            <div class="produk-info">
+                <h3>iphone 16e</h3>
+                <p class="harga">Rp 13.249.000</p>
+                <a href="detail.ip16e.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+        
+        <div class="produk-card">
+            <img src="ip17..webp" alt="iPhone 17">
+            <div class="produk-info">
+                <h3>iphone 17</h3>
+                <p class="harga">Rp 17.999.000</p>
+                <a href="detail.ip17.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+        
+        <div class="produk-card">
+            <img src="ip17pm.webp" alt="iPhone 17 Pro Max">
+            <div class="produk-info">
+                <h3>iphone 17 pro max</h3>
+                <p class="harga">Rp 26.999.000</p>
+                <a href="detail.ip17pm.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+
+       
+        <div class="produk-card">
+            <img src="ip17air.webp" alt="iPhone 17 Air">
+            <div class="produk-info">
+                <h3>iphone 17 air</h3>
+                <p class="harga">Rp 16.999.000</p>
+                <a href="detail.ip17air.html" class="btn-beli">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+    
+      <footer>
+        <div class="info-toko">
+            <h2>Phone Gallery</h2>
+            <p><strong>Phone Gallery adalah toko resmi yang menyediakan berbagai jenis iPhone terbaru dengan harga terbaik.</strong></p>
+            <p><strong>Kami berkomitmen untuk memberikan pelayanan terbaik dan produk berkualitas kepada pelanggan kami.</strong></p>
+            <p><strong>Alamat:</strong> Jl. telukjambe No. 1, Karawang, Jawa Barat</p>
+            <p><strong>Jam Operasional:</strong> 09.00 - 21.00 WIB</p>
+            <p><strong>WhatsApp:</strong> 0838-9300-4600</p>
+        </div>
+        <hr style="width: 50%; margin: 20px auto; border: 0.5px solid #555;">
+        <div class="sosmed"></div>
+    </footer>
+
+</body>
+</html>
+
+    </style>
+</head>
+<body>
